@@ -34,7 +34,6 @@ const PROJECTS = [
     tags: ["React", "Node.js", "MongoDB", "Razorpay"], date: "Jan 2025",
     github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
   },
-  
   {
     emoji: "📚", planetColor: "#2980b9", glowColor: "rgba(41,128,185,0.5)",
     name: "LibraSync", tagline: "Library Management System",
@@ -98,7 +97,6 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2024",
     github: "https://github.com/ikjasrasool/DSA-Master-Tracker", live: "https://ikjasrasool.github.io/DSA-Master-Tracker/", stat: "MAANG-Focused",
   },
-  
 ];
 
 const SKILLS = [
@@ -243,7 +241,7 @@ function useReveal() {
 }
 function Reveal({ children, delay=0 }) {
   const [ref, v] = useReveal();
-  return <div ref={ref} style={{ opacity:v?1:0, transform:v?"translateY(0) scale(1)":"translateY(40px) scale(0.97)", transition:`opacity 0.85s ease ${delay}s,transform 0.85s ease ${delay}s` }}>{children}</div>;
+  return <div ref={ref} style={{ opacity:v?1:0, transform:v?"translateY(0) scale(1)":"translateY(40px) scale(0.97)", transition:`opacity 0.85s ease ${delay}s,transform 0.85s ease ${delay}s`, height:"100%", display:"flex", flexDirection:"column" }}>{children}</div>;
 }
 
 // ─── SECTION LABEL ────────────────────────────────────────────────────────────
@@ -366,7 +364,7 @@ export default function Portfolio() {
           </div>
           {/* Stats */}
           <div className="statsRow" style={{opacity:0,animation:"fadeUp 0.9s 1.3s forwards",display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:14,marginTop:52}}>
-            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["12+","Projects","#34d399"]].map(([n,l,c])=>(
+            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["1","Projects","#34d399"]].map(([n,l,c])=>(
               <div key={l} style={{textAlign:"center",padding:"16px 12px",background:"rgba(255,255,255,0.028)",border:`1px solid ${c}22`,borderRadius:6,boxShadow:`0 0 20px ${c}10`}}>
                 <div style={{...F,fontSize:"1.55rem",fontWeight:900,color:c,lineHeight:1}}>{n}</div>
                 <div style={{fontSize:10,letterSpacing:"0.15em",textTransform:"uppercase",color:"rgba(180,190,230,0.4)",marginTop:6}}>{l}</div>
@@ -448,7 +446,7 @@ export default function Portfolio() {
             <div style={{textAlign:"center",marginBottom:40}}>
               <SectionLabel>Expeditions</SectionLabel>
               <h2 style={{...F,fontSize:"clamp(1.8rem,3.5vw,2.8rem)",fontWeight:700,color:"#e2e8f0",marginBottom:8}}>Projects</h2>
-              <p style={{color:"rgba(160,170,210,0.5)",fontSize:14}}>12 production-ready applications across full-stack, AI/ML, systems engineering, and DSA tools</p>
+              <p style={{color:"rgba(160,170,210,0.5)",fontSize:14}}>A production-ready hospital administration system built with Node.js & PostgreSQL</p>
             </div>
           </Reveal>
           {/* Filters */}
@@ -459,17 +457,17 @@ export default function Portfolio() {
               ))}
             </div>
           </Reveal>
-          <div className="projGrid" style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(330px,1fr))",gap:22}}>
+          <div className="projGrid" style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(330px,1fr))",gap:22,alignItems:"stretch"}}>
             {filteredProjects.map((p,i)=>(
               <Reveal key={p.name} delay={i*0.07}>
-                <div className="pc" style={{position:"relative",overflow:"hidden",padding:"28px 24px",background:"rgba(255,255,255,0.024)",border:hoveredProject===p.name?`1px solid ${p.planetColor}45`:"1px solid rgba(167,139,250,0.09)",borderRadius:8,transition:"all 0.4s cubic-bezier(0.23,1,0.32,1)",cursor:"default"}} onMouseEnter={()=>setHoveredProject(p.name)} onMouseLeave={()=>setHoveredProject(null)}>
+                <div className="pc" style={{position:"relative",overflow:"hidden",padding:"28px 24px",background:"rgba(255,255,255,0.024)",border:hoveredProject===p.name?`1px solid ${p.planetColor}45`:"1px solid rgba(167,139,250,0.09)",borderRadius:8,transition:"all 0.4s cubic-bezier(0.23,1,0.32,1)",cursor:"default",display:"flex",flexDirection:"column",height:"100%"}} onMouseEnter={()=>setHoveredProject(p.name)} onMouseLeave={()=>setHoveredProject(null)}>
                   <div style={{position:"absolute",top:-50,right:-50,width:160,height:160,borderRadius:"50%",background:`radial-gradient(circle,${p.glowColor.replace("0.5","0.07")},transparent 70%)`,pointerEvents:"none"}} />
                   <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${p.planetColor},transparent)`,opacity:hoveredProject===p.name?1:0.4,transition:"opacity 0.3s"}} />
                   <div style={{fontSize:30,marginBottom:12}}>{p.emoji}</div>
                   <div style={{...F,fontSize:9,letterSpacing:"0.2em",color:p.planetColor,marginBottom:7,textTransform:"uppercase"}}>{p.date}</div>
                   <h3 style={{...F,fontSize:"1.08rem",fontWeight:700,color:"#e2e8f0",marginBottom:5}}>{p.name}</h3>
                   <div style={{fontSize:12,color:"rgba(160,170,220,0.5)",marginBottom:12}}>{p.tagline}</div>
-                  <p style={{fontSize:13,color:"rgba(160,170,210,0.52)",lineHeight:1.72,marginBottom:16}}>{p.desc}</p>
+                  <p style={{fontSize:13,color:"rgba(160,170,210,0.52)",lineHeight:1.72,marginBottom:16,flexGrow:1}}>{p.desc}</p>
                   <div style={{display:"inline-block",padding:"4px 12px",background:`${p.planetColor}16`,border:`1px solid ${p.planetColor}32`,borderRadius:20,fontSize:11,color:p.planetColor,marginBottom:16}}>▲ {p.stat}</div>
                   <div style={{display:"flex",flexWrap:"wrap",gap:7,marginBottom:20}}>
                     {p.tags.map(t=><span key={t} style={{fontSize:10,letterSpacing:"0.1em",textTransform:"uppercase",padding:"3px 9px",borderRadius:3,border:"1px solid rgba(167,139,250,0.18)",color:"rgba(180,190,240,0.48)",background:"rgba(167,139,250,0.05)"}}>{t}</span>)}
