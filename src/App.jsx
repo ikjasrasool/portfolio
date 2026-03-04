@@ -20,19 +20,19 @@ const PROJECTS = [
     tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2025",
     github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
   },
+    {
+    emoji: "🚌", planetColor: "#e67e22", glowColor: "rgba(230,126,34,0.5)",
+    name: "Saravana Bhavan Express", tagline: "Food Pre-Ordering Platform",
+    desc: "Full-stack food pre-ordering platform reducing customer wait time by 75% with RESTful APIs. Built dual dashboard (User & Admin) with real-time order tracking, Razorpay payment integration, and analytics.",
+    tags: ["React", "Node.js", "MongoDB", "Razorpay"], date: "Jan 2025",
+    github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
+  },
   {
     emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
     name: "Placematics", tagline: "Placement Management System",
     desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
     tags: ["Spring Boot", "MySQL", "Thymeleaf", "REST API"], date: "May 2024",
     github: "https://github.com/ikjasrasool/Placematics", live: null, stat: "60% workload reduction",
-  },
-  {
-    emoji: "🚌", planetColor: "#e67e22", glowColor: "rgba(230,126,34,0.5)",
-    name: "Saravana Bhavan Express", tagline: "Food Pre-Ordering Platform",
-    desc: "Full-stack food pre-ordering platform reducing customer wait time by 75% with RESTful APIs. Built dual dashboard (User & Admin) with real-time order tracking, Razorpay payment integration, and analytics.",
-    tags: ["React", "Node.js", "MongoDB", "Razorpay"], date: "Jan 2025",
-    github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
   },
   {
     emoji: "📚", planetColor: "#2980b9", glowColor: "rgba(41,128,185,0.5)",
@@ -364,7 +364,7 @@ export default function Portfolio() {
           </div>
           {/* Stats */}
           <div className="statsRow" style={{opacity:0,animation:"fadeUp 0.9s 1.3s forwards",display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:14,marginTop:52}}>
-            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["1","Projects","#34d399"]].map(([n,l,c])=>(
+            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["12+","Projects","#34d399"]].map(([n,l,c])=>(
               <div key={l} style={{textAlign:"center",padding:"16px 12px",background:"rgba(255,255,255,0.028)",border:`1px solid ${c}22`,borderRadius:6,boxShadow:`0 0 20px ${c}10`}}>
                 <div style={{...F,fontSize:"1.55rem",fontWeight:900,color:c,lineHeight:1}}>{n}</div>
                 <div style={{fontSize:10,letterSpacing:"0.15em",textTransform:"uppercase",color:"rgba(180,190,230,0.4)",marginTop:6}}>{l}</div>
