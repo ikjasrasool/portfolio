@@ -1,12 +1,5 @@
 # 🚀 Ikjas Rasool P — Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-portfolio--ikjas.vercel.app-a78bfa?style=for-the-badge&logo=vercel)](https://portfolio-ikjas.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-ikjasrasool-181717?style=for-the-badge&logo=github)](https://github.com/ikjasrasool)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ikjasrasool-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ikjasrasool)
-
-> A space-themed, interactive developer portfolio built with React + Vite — featuring a live starfield canvas, glitch animations, typewriter effects, and smooth scroll reveals.
-
----
 
 ## ✨ Features
 
@@ -88,9 +81,6 @@ npm run build
 | 🚌 Saravana Bhavan Express | React, Node.js, MongoDB | [Demo](https://hotel-1-f248.onrender.com) |
 | 🤟 SignTalk | Flutter, FastAPI, LSTM | — |
 | 📚 LibraSync | React, Firebase | [Demo](https://ikjasrasool.github.io/library/) |
-| 📊 DSA Master Tracker | HTML, CSS, JS | [Demo](https://ikjasrasool.github.io/DSA-Master-Tracker/) |
-| 🗺️ DSA 15-Day Challenge | HTML, CSS, JS | [Demo](https://ikjasrasool.github.io/DSA-15-Day-Challenge/) |
-| 🐍 Snake Game | Python, Tkinter, MySQL | — |
 
 ---
 
