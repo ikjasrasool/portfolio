@@ -14,6 +14,13 @@ const FontLoader = () => {
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
+    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
+    name: "SignTalk", tagline: "AI Sign Language Translator",
+    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
+    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2025",
+    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
+  },
+  {
     emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
     name: "Placematics", tagline: "Placement Management System",
     desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
@@ -27,13 +34,7 @@ const PROJECTS = [
     tags: ["React", "Node.js", "MongoDB", "Razorpay"], date: "Jan 2025",
     github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
   },
-  {
-    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
-    name: "SignTalk", tagline: "AI Sign Language Translator",
-    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
-    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2024",
-    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
-  },
+  
   {
     emoji: "📚", planetColor: "#2980b9", glowColor: "rgba(41,128,185,0.5)",
     name: "LibraSync", tagline: "Library Management System",
@@ -66,37 +67,38 @@ const PROJECTS = [
     emoji: "🏥", planetColor: "#e91e63", glowColor: "rgba(233,30,99,0.5)",
     name: "Hospital Management System", tagline: "Patient & Doctor Records System",
     desc: "System to manage patient records, appointments, and doctor schedules efficiently. Streamlines administrative tasks and automates complex hospital workflows.",
-    tags: ["Node.js", "PostgreSQL", "EJS", "Express"], date: "2024",
+    tags: ["Node.js", "PostgreSQL", "EJS", "Express"], date: "2023",
     github: "https://github.com/ikjasrasool/hospital_Management", live: null, stat: "Workflow Automation",
+  },
+  {
+    emoji: "🐍", planetColor: "#f1c40f", glowColor: "rgba(241,196,15,0.5)",
+    name: "Snake Game", tagline: "Snake Game with MySQL Score System",
+    desc: "Fullscreen Snake Game built with Python & Tkinter featuring regular food (+10pts) and bonus food (+30pts). Integrates MySQL for persistent score history, player rankings, search by name/date, and automatic high score updates.",
+    tags: ["Python", "Tkinter", "MySQL", "mysql-connector"], date: "2023",
+    github: "https://github.com/ikjasrasool/snake_game", live: null, stat: "MySQL Score DB",
   },
   {
     emoji: "🧮", planetColor: "#9c27b0", glowColor: "rgba(156,39,176,0.5)",
     name: "Worker Calculator", tagline: "Piece Rate Earnings Calculator",
     desc: "Piece rate earnings calculator for home-based workers. Supports price input in Rupees or Paisa with automatic conversion, instant totals, and data persistence across sessions.",
-    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2024",
+    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2023",
     github: "https://github.com/ikjasrasool/worker_calculator", live: "https://worker-calculator.vercel.app", stat: "Session Persistence",
   },
   {
     emoji: "🗺", planetColor: "#16a085", glowColor: "rgba(22,160,133,0.5)",
     name: "DSA 15-Day Challenge", tagline: "Interactive DSA Progress Tracker",
     desc: "Interactive 15-day DSA challenge tracker with 150+ curated problems from LeetCode, GFG, and Coding Ninjas. Features real-time progress tracking, search functionality, expand/collapse daily sections, and persistent localStorage across sessions.",
-    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage"], date: "2025",
+    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage"], date: "2024",
     github: "https://github.com/ikjasrasool/DSA-15-Day-Challenge", live: "https://ikjasrasool.github.io/DSA-15-Day-Challenge/", stat: "150+ Problems",
   },
   {
     emoji: "📊", planetColor: "#2ecc71", glowColor: "rgba(46,204,113,0.5)",
     name: "DSA Master Tracker", tagline: "Ultimate Interview Preparation Hub",
     desc: "Pattern-based DSA master tracker covering all major interview topics — Arrays, DP, Graphs, Trees, and more. Includes difficulty filters, company-specific sections (MAANG), real-time progress bars, and category navigation tabs.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2025",
+    tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2024",
     github: "https://github.com/ikjasrasool/DSA-Master-Tracker", live: "https://ikjasrasool.github.io/DSA-Master-Tracker/", stat: "MAANG-Focused",
   },
-  {
-    emoji: "🐍", planetColor: "#f1c40f", glowColor: "rgba(241,196,15,0.5)",
-    name: "Snake Game", tagline: "Snake Game with MySQL Score System",
-    desc: "Fullscreen Snake Game built with Python & Tkinter featuring regular food (+10pts) and bonus food (+30pts). Integrates MySQL for persistent score history, player rankings, search by name/date, and automatic high score updates.",
-    tags: ["Python", "Tkinter", "MySQL", "mysql-connector"], date: "2024",
-    github: "https://github.com/ikjasrasool/snake_game", live: null, stat: "MySQL Score DB",
-  },
+  
 ];
 
 const SKILLS = [
