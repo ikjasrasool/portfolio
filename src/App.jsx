@@ -14,11 +14,11 @@ const FontLoader = () => {
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
-    name: "SignTalk", tagline: "AI Sign Language Translator",
-    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
-    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2025",
-    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
+    emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
+    name: "Placematics", tagline: "Placement Management System",
+    desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
+    tags: ["Spring Boot", "MySQL", "Thymeleaf", "REST API"], date: "May 2024",
+    github: "https://github.com/ikjasrasool/Placematics", live: null, stat: "60% workload reduction",
   },
   {
     emoji: "🚌", planetColor: "#e67e22", glowColor: "rgba(230,126,34,0.5)",
@@ -28,11 +28,11 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
   },
   {
-    emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
-    name: "Placematics", tagline: "Placement Management System",
-    desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
-    tags: ["Spring Boot", "MySQL", "Thymeleaf", "REST API"], date: "May 2024",
-    github: "https://github.com/ikjasrasool/Placematics", live: null, stat: "60% workload reduction",
+    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
+    name: "SignTalk", tagline: "AI Sign Language Translator",
+    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
+    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2024",
+    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
   },
   {
     emoji: "📚", planetColor: "#2980b9", glowColor: "rgba(41,128,185,0.5)",
@@ -49,11 +49,18 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/ReSellify", live: null, stat: "Real-time Chat",
   },
   {
-    emoji: "🛍️", planetColor: "#f39c12", glowColor: "rgba(243,156,18,0.5)",
+    emoji: "🛍", planetColor: "#f39c12", glowColor: "rgba(243,156,18,0.5)",
     name: "E-Commerce Platform", tagline: "Online Shopping Platform",
     desc: "Online shopping platform with secure transactions, product listings, and order management. Features shopping cart, payment integration, and admin dashboard.",
     tags: ["HTML", "CSS", "JavaScript", "Backend"], date: "2024",
     github: "https://github.com/ikjasrasool/Ecommerce_fullsatck_project", live: null, stat: "Full Stack Store",
+  },
+  {
+    emoji: "🌤", planetColor: "#00bcd4", glowColor: "rgba(0,188,212,0.5)",
+    name: "Weather Forecast App", tagline: "Real-time Weather Application",
+    desc: "Weather app providing real-time forecasts, temperature updates, and weather alerts for locations worldwide using live weather APIs with a responsive interface.",
+    tags: ["React", "Weather API", "CSS"], date: "2024",
+    github: "https://github.com/ikjasrasool/weatherApp", live: "https://ikjasrasool.github.io/weatherApp/", stat: "Live Weather Data",
   },
   {
     emoji: "🏥", planetColor: "#e91e63", glowColor: "rgba(233,30,99,0.5)",
@@ -63,49 +70,42 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/hospital_Management", live: null, stat: "Workflow Automation",
   },
   {
-    emoji: "🌤️", planetColor: "#00bcd4", glowColor: "rgba(0,188,212,0.5)",
-    name: "Weather Forecast App", tagline: "Real-time Weather Application",
-    desc: "Weather app providing real-time forecasts, temperature updates, and weather alerts for locations worldwide using live weather APIs with a responsive interface.",
-    tags: ["React", "Weather API", "CSS"], date: "2023",
-    github: "https://github.com/ikjasrasool/weatherApp", live: "https://ikjasrasool.github.io/weatherApp/", stat: "Live Weather Data",
-  },
-  {
     emoji: "🧮", planetColor: "#9c27b0", glowColor: "rgba(156,39,176,0.5)",
     name: "Worker Calculator", tagline: "Piece Rate Earnings Calculator",
     desc: "Piece rate earnings calculator for home-based workers. Supports price input in Rupees or Paisa with automatic conversion, instant totals, and data persistence across sessions.",
-    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2023",
+    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2024",
     github: "https://github.com/ikjasrasool/worker_calculator", live: "https://worker-calculator.vercel.app", stat: "Session Persistence",
   },
   {
-    emoji: "🐍", planetColor: "#f1c40f", glowColor: "rgba(241,196,15,0.5)",
-    name: "Snake Game", tagline: "Snake Game with MySQL Score System",
-    desc: "Fullscreen Snake Game built with Python & Tkinter featuring regular food (+10pts) and bonus food (+30pts). Integrates MySQL for persistent score history, player rankings, search by name/date, and automatic high score updates.",
-    tags: ["Python", "Tkinter", "MySQL", "mysql-connector"], date: "2023",
-    github: "https://github.com/ikjasrasool/snake_game", live: null, stat: "MySQL Score DB",
-  },
-  {
-    emoji: "🗺️", planetColor: "#16a085", glowColor: "rgba(22,160,133,0.5)",
+    emoji: "🗺", planetColor: "#16a085", glowColor: "rgba(22,160,133,0.5)",
     name: "DSA 15-Day Challenge", tagline: "Interactive DSA Progress Tracker",
     desc: "Interactive 15-day DSA challenge tracker with 150+ curated problems from LeetCode, GFG, and Coding Ninjas. Features real-time progress tracking, search functionality, expand/collapse daily sections, and persistent localStorage across sessions.",
-    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage"], date: "2024",
+    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage"], date: "2025",
     github: "https://github.com/ikjasrasool/DSA-15-Day-Challenge", live: "https://ikjasrasool.github.io/DSA-15-Day-Challenge/", stat: "150+ Problems",
   },
   {
     emoji: "📊", planetColor: "#2ecc71", glowColor: "rgba(46,204,113,0.5)",
     name: "DSA Master Tracker", tagline: "Ultimate Interview Preparation Hub",
     desc: "Pattern-based DSA master tracker covering all major interview topics — Arrays, DP, Graphs, Trees, and more. Includes difficulty filters, company-specific sections (MAANG), real-time progress bars, and category navigation tabs.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2024",
+    tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2025",
     github: "https://github.com/ikjasrasool/DSA-Master-Tracker", live: "https://ikjasrasool.github.io/DSA-Master-Tracker/", stat: "MAANG-Focused",
+  },
+  {
+    emoji: "🐍", planetColor: "#f1c40f", glowColor: "rgba(241,196,15,0.5)",
+    name: "Snake Game", tagline: "Snake Game with MySQL Score System",
+    desc: "Fullscreen Snake Game built with Python & Tkinter featuring regular food (+10pts) and bonus food (+30pts). Integrates MySQL for persistent score history, player rankings, search by name/date, and automatic high score updates.",
+    tags: ["Python", "Tkinter", "MySQL", "mysql-connector"], date: "2024",
+    github: "https://github.com/ikjasrasool/snake_game", live: null, stat: "MySQL Score DB",
   },
 ];
 
 const SKILLS = [
-  { cat: "Languages", color: "#f39c12", items: [{ name: "Java", icon: "☕" }, { name: "Python", icon: "🐍" }, { name: "JavaScript", icon: "📜" }, { name: "C++", icon: "⚙️" }, { name: "C", icon: "🔵" }] },
-  { cat: "Frontend", color: "#3498db", items: [{ name: "React.js", icon: "⚛️" }, { name: "HTML5", icon: "📄" }, { name: "CSS3", icon: "🎨" }, { name: "Tailwind", icon: "🌊" }, { name: "Bootstrap", icon: "🅱️" }] },
-  { cat: "Backend", color: "#2ecc71", items: [{ name: "Node.js", icon: "🟢" }, { name: "Express.js", icon: "🚂" }, { name: "Spring Boot", icon: "🍃" }, { name: "Flask", icon: "🌶️" },
-  { cat: "Databases", color: "#e74c3c", items: [{ name: "MongoDB", icon: "🍃" }, { name: "MySQL", icon: "🐬" }, { name: "PostgreSQL", icon: "🐘" },
-  { cat: "Tools", color: "#9b59b6", items: [{ name: "Git", icon: "🌿" }, { name: "GitHub", icon: "🐙" }, { name: "VS Code", icon: "💻" }, { name: "Postman", icon: "📮" }, { name: "Figma", icon: "🎨" }, { name: "Vercel", icon: "▲" }, { name: "Docker", icon: "🐳" }, { name: "Jira", icon: "🔷" }] },
-  { cat: "Core CS", color: "#00bcd4", items: [{ name: "DSA", icon: "📊" }, { name: "OOP", icon: "🎯" }, { name: "DBMS", icon: "🗄️" }, { name: "System Design", icon: "🏗️" }, { name: "REST APIs", icon: "🔌" }, { name: "Problem Solving", icon: "💡" }] },
+  { cat: "Languages", color: "#f39c12", items: [{ name: "Java", icon: "☕" }, { name: "Python", icon: "🐍" }, { name: "JavaScript", icon: "📜" }, { name: "C++", icon: "⚙" }, { name: "C", icon: "🔵" }] },
+  { cat: "Frontend", color: "#3498db", items: [{ name: "React.js", icon: "⚛" }, { name: "HTML5", icon: "📄" }, { name: "CSS3", icon: "🎨" }, { name: "Tailwind", icon: "🌊" }, { name: "Bootstrap", icon: "🅱" }] },
+  { cat: "Backend", color: "#2ecc71", items: [{ name: "Node.js", icon: "\u{1F7E2}" }, { name: "Express.js", icon: "\u{1F682}" }, { name: "Spring Boot", icon: "\u{1F343}" }, { name: "Flask", icon: "\u{1F336}\uFE0F" }, { name: "FastAPI", icon: "\u26A1" }] },
+  { cat: "Databases", color: "#e74c3c", items: [{ name: "MongoDB", icon: "\u{1F343}" }, { name: "MySQL", icon: "\u{1F42C}" }, { name: "PostgreSQL", icon: "\u{1F418}" }, { name: "Firebase", icon: "\u{1F525}" }] },
+  { cat: "Tools", color: "#9b59b6", items: [{ name: "Git", icon: "\u{1F33F}" }, { name: "GitHub", icon: "\u{1F419}" }, { name: "VS Code", icon: "\u{1F4BB}" }, { name: "Postman", icon: "\u{1F4EE}" }, { name: "Figma", icon: "\u{1F3A8}" }, { name: "Vercel", icon: "\u25B2" }, { name: "Docker", icon: "\u{1F433}" }, { name: "Jira", icon: "\u{1F537}" }] },
+  { cat: "Core CS", color: "#00bcd4", items: [{ name: "DSA", icon: "\u{1F4CA}" }, { name: "OOP", icon: "\u{1F3AF}" }, { name: "DBMS", icon: "\u{1F5C4}\uFE0F" }, { name: "System Design", icon: "\u{1F3D7}\uFE0F" }, { name: "REST APIs", icon: "\u{1F50C}" }, { name: "Problem Solving", icon: "\u{1F4A1}" }] },
 ];
 
 const EXPERIENCE = [
@@ -388,7 +388,7 @@ export default function Portfolio() {
               <p style={{color:"rgba(180,190,230,0.55)",fontSize:14,lineHeight:1.9,marginBottom:18,fontWeight:300}}>I've solved <strong style={{color:"#7dd3fc"}}>457+ LeetCode problems</strong> and maintain <strong style={{color:"#7dd3fc"}}>2000+ GitHub contributions</strong>. Certified as <strong style={{color:"#f472b6"}}>MongoDB Associate Developer (C100DEV)</strong> — February 2025.</p>
               <p style={{color:"rgba(180,190,230,0.5)",fontSize:14,lineHeight:1.9,fontWeight:300}}>From leading a hackathon team to 1st place, to building AI-powered apps and interning as an ML engineer — I navigate every layer of the tech stack with curiosity and ambition.</p>
               <div style={{marginTop:28,display:"flex",flexDirection:"column",gap:10}}>
-                {[["📍","Tiruppur, Tamil Nadu, India"],["🎓","B.E. CSE · Kongu Engineering College · 2022–2026"],["✉️","ikjasrasool2022@gmail.com"],["📞","+91 9361300503"]].map(([icon,text])=>(
+                {[["📍","Tiruppur, Tamil Nadu, India"],["🎓","B.E. CSE · Kongu Engineering College · 2022–2026"],["✉","ikjasrasool2022@gmail.com"],["📞","+91 9361300503"]].map(([icon,text])=>(
                   <div key={text} style={{display:"flex",gap:12,fontSize:13,color:"rgba(180,190,230,0.5)"}}><span>{icon}</span><span>{text}</span></div>
                 ))}
               </div>
