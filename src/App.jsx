@@ -14,11 +14,11 @@ const FontLoader = () => {
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
-    name: "Placematics", tagline: "Placement Management System",
-    desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
-    tags: ["Spring Boot", "MySQL", "Thymeleaf", "REST API"], date: "May 2024",
-    github: "https://github.com/ikjasrasool/Placematics", live: null, stat: "60% workload reduction",
+    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
+    name: "SignTalk", tagline: "AI Sign Language Translator",
+    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
+    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2025",
+    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
   },
   {
     emoji: "🚌", planetColor: "#e67e22", glowColor: "rgba(230,126,34,0.5)",
@@ -28,11 +28,11 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/hotel", live: "https://hotel-1-f248.onrender.com", stat: "75% wait time reduction",
   },
   {
-    emoji: "🤟", planetColor: "#8e44ad", glowColor: "rgba(142,68,173,0.5)",
-    name: "SignTalk", tagline: "AI Sign Language Translator",
-    desc: "Created AI-powered sign language translator achieving 78% accuracy with LSTM+GNN hybrid model. Bidirectional translation with 3D ISL animations supporting 150+ vocabulary signs.",
-    tags: ["Flutter", "FastAPI", "MediaPipe", "LSTM"], date: "Nov 2024",
-    github: "https://github.com/ikjasrasool/SignTalk", live: null, stat: "78% accuracy",
+    emoji: "🎓", planetColor: "#e74c3c", glowColor: "rgba(231,76,60,0.5)",
+    name: "Placematics", tagline: "Placement Management System",
+    desc: "Built placement management system with role-based authentication and automated recruiter-student matching. Designed RESTful API architecture and MySQL schema reducing coordinator workload by 60%.",
+    tags: ["Spring Boot", "MySQL", "Thymeleaf", "REST API"], date: "May 2024",
+    github: "https://github.com/ikjasrasool/Placematics", live: null, stat: "60% workload reduction",
   },
   {
     emoji: "📚", planetColor: "#2980b9", glowColor: "rgba(41,128,185,0.5)",
@@ -56,13 +56,6 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/Ecommerce_fullsatck_project", live: null, stat: "Full Stack Store",
   },
   {
-    emoji: "🌤️", planetColor: "#00bcd4", glowColor: "rgba(0,188,212,0.5)",
-    name: "Weather Forecast App", tagline: "Real-time Weather Application",
-    desc: "Weather app providing real-time forecasts, temperature updates, and weather alerts for locations worldwide using live weather APIs with a responsive interface.",
-    tags: ["React", "Weather API", "CSS"], date: "2024",
-    github: "https://github.com/ikjasrasool/weatherApp", live: "https://ikjasrasool.github.io/weatherApp/", stat: "Live Weather Data",
-  },
-  {
     emoji: "🏥", planetColor: "#e91e63", glowColor: "rgba(233,30,99,0.5)",
     name: "Hospital Management System", tagline: "Patient & Doctor Records System",
     desc: "System to manage patient records, appointments, and doctor schedules efficiently. Streamlines administrative tasks and automates complex hospital workflows.",
@@ -70,19 +63,47 @@ const PROJECTS = [
     github: "https://github.com/ikjasrasool/hospital_Management", live: null, stat: "Workflow Automation",
   },
   {
+    emoji: "🌤️", planetColor: "#00bcd4", glowColor: "rgba(0,188,212,0.5)",
+    name: "Weather Forecast App", tagline: "Real-time Weather Application",
+    desc: "Weather app providing real-time forecasts, temperature updates, and weather alerts for locations worldwide using live weather APIs with a responsive interface.",
+    tags: ["React", "Weather API", "CSS"], date: "2023",
+    github: "https://github.com/ikjasrasool/weatherApp", live: "https://ikjasrasool.github.io/weatherApp/", stat: "Live Weather Data",
+  },
+  {
     emoji: "🧮", planetColor: "#9c27b0", glowColor: "rgba(156,39,176,0.5)",
     name: "Worker Calculator", tagline: "Piece Rate Earnings Calculator",
     desc: "Piece rate earnings calculator for home-based workers. Supports price input in Rupees or Paisa with automatic conversion, instant totals, and data persistence across sessions.",
-    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2024",
+    tags: ["React", "Vite", "Tailwind CSS", "LocalStorage"], date: "2023",
     github: "https://github.com/ikjasrasool/worker_calculator", live: "https://worker-calculator.vercel.app", stat: "Session Persistence",
+  },
+  {
+    emoji: "🐍", planetColor: "#f1c40f", glowColor: "rgba(241,196,15,0.5)",
+    name: "Snake Game", tagline: "Snake Game with MySQL Score System",
+    desc: "Fullscreen Snake Game built with Python & Tkinter featuring regular food (+10pts) and bonus food (+30pts). Integrates MySQL for persistent score history, player rankings, search by name/date, and automatic high score updates.",
+    tags: ["Python", "Tkinter", "MySQL", "mysql-connector"], date: "2023",
+    github: "https://github.com/ikjasrasool/snake_game", live: null, stat: "MySQL Score DB",
+  },
+  {
+    emoji: "🗺️", planetColor: "#16a085", glowColor: "rgba(22,160,133,0.5)",
+    name: "DSA 15-Day Challenge", tagline: "Interactive DSA Progress Tracker",
+    desc: "Interactive 15-day DSA challenge tracker with 150+ curated problems from LeetCode, GFG, and Coding Ninjas. Features real-time progress tracking, search functionality, expand/collapse daily sections, and persistent localStorage across sessions.",
+    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage"], date: "2024",
+    github: "https://github.com/ikjasrasool/DSA-15-Day-Challenge", live: "https://ikjasrasool.github.io/DSA-15-Day-Challenge/", stat: "150+ Problems",
+  },
+  {
+    emoji: "📊", planetColor: "#2ecc71", glowColor: "rgba(46,204,113,0.5)",
+    name: "DSA Master Tracker", tagline: "Ultimate Interview Preparation Hub",
+    desc: "Pattern-based DSA master tracker covering all major interview topics — Arrays, DP, Graphs, Trees, and more. Includes difficulty filters, company-specific sections (MAANG), real-time progress bars, and category navigation tabs.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Babel"], date: "2024",
+    github: "https://github.com/ikjasrasool/DSA-Master-Tracker", live: "https://ikjasrasool.github.io/DSA-Master-Tracker/", stat: "MAANG-Focused",
   },
 ];
 
 const SKILLS = [
   { cat: "Languages", color: "#f39c12", items: [{ name: "Java", icon: "☕" }, { name: "Python", icon: "🐍" }, { name: "JavaScript", icon: "📜" }, { name: "C++", icon: "⚙️" }, { name: "C", icon: "🔵" }] },
   { cat: "Frontend", color: "#3498db", items: [{ name: "React.js", icon: "⚛️" }, { name: "HTML5", icon: "📄" }, { name: "CSS3", icon: "🎨" }, { name: "Tailwind", icon: "🌊" }, { name: "Bootstrap", icon: "🅱️" }] },
-  { cat: "Backend", color: "#2ecc71", items: [{ name: "Node.js", icon: "🟢" }, { name: "Express.js", icon: "🚂" }, { name: "Spring Boot", icon: "🍃" }, { name: "Flask", icon: "🌶️" }, { name: "FastAPI", icon: "⚡" }] },
-  { cat: "Databases", color: "#e74c3c", items: [{ name: "MongoDB", icon: "🍃" }, { name: "MySQL", icon: "🐬" }, { name: "PostgreSQL", icon: "🐘" }, { name: "Firebase", icon: "🔥" }] },
+  { cat: "Backend", color: "#2ecc71", items: [{ name: "Node.js", icon: "🟢" }, { name: "Express.js", icon: "🚂" }, { name: "Spring Boot", icon: "🍃" }, { name: "Flask", icon: "🌶️" },
+  { cat: "Databases", color: "#e74c3c", items: [{ name: "MongoDB", icon: "🍃" }, { name: "MySQL", icon: "🐬" }, { name: "PostgreSQL", icon: "🐘" },
   { cat: "Tools", color: "#9b59b6", items: [{ name: "Git", icon: "🌿" }, { name: "GitHub", icon: "🐙" }, { name: "VS Code", icon: "💻" }, { name: "Postman", icon: "📮" }, { name: "Figma", icon: "🎨" }, { name: "Vercel", icon: "▲" }, { name: "Docker", icon: "🐳" }, { name: "Jira", icon: "🔷" }] },
   { cat: "Core CS", color: "#00bcd4", items: [{ name: "DSA", icon: "📊" }, { name: "OOP", icon: "🎯" }, { name: "DBMS", icon: "🗄️" }, { name: "System Design", icon: "🏗️" }, { name: "REST APIs", icon: "🔌" }, { name: "Problem Solving", icon: "💡" }] },
 ];
@@ -256,7 +277,7 @@ export default function Portfolio() {
 
   const scrollTo = (id) => { document.getElementById(id)?.scrollIntoView({behavior:"smooth"}); setMenuOpen(false); };
   const NAV_ITEMS = ["about","skills","projects","experience","achievements","contact"];
-  const techFilters = ["all","React","Spring Boot","Node.js","Python","Flutter"];
+  const techFilters = ["all","React","Spring Boot","Node.js","Python","Flutter","JavaScript"];
   const filteredProjects = projectFilter==="all" ? PROJECTS : PROJECTS.filter(p=>p.tags.some(t=>t.toLowerCase().includes(projectFilter.toLowerCase())));
   const F = { fontFamily:"'Orbitron',sans-serif" };
 
@@ -343,7 +364,7 @@ export default function Portfolio() {
           </div>
           {/* Stats */}
           <div className="statsRow" style={{opacity:0,animation:"fadeUp 0.9s 1.3s forwards",display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:14,marginTop:52}}>
-            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["9+","Projects","#34d399"]].map(([n,l,c])=>(
+            {[["8.40","CGPA","#7dd3fc"],["457+","LeetCode","#a78bfa"],["2000+","Commits","#f472b6"],["12+","Projects","#34d399"]].map(([n,l,c])=>(
               <div key={l} style={{textAlign:"center",padding:"16px 12px",background:"rgba(255,255,255,0.028)",border:`1px solid ${c}22`,borderRadius:6,boxShadow:`0 0 20px ${c}10`}}>
                 <div style={{...F,fontSize:"1.55rem",fontWeight:900,color:c,lineHeight:1}}>{n}</div>
                 <div style={{fontSize:10,letterSpacing:"0.15em",textTransform:"uppercase",color:"rgba(180,190,230,0.4)",marginTop:6}}>{l}</div>
@@ -425,7 +446,7 @@ export default function Portfolio() {
             <div style={{textAlign:"center",marginBottom:40}}>
               <SectionLabel>Expeditions</SectionLabel>
               <h2 style={{...F,fontSize:"clamp(1.8rem,3.5vw,2.8rem)",fontWeight:700,color:"#e2e8f0",marginBottom:8}}>Projects</h2>
-              <p style={{color:"rgba(160,170,210,0.5)",fontSize:14}}>9 production-ready applications across full-stack, AI/ML, and systems engineering</p>
+              <p style={{color:"rgba(160,170,210,0.5)",fontSize:14}}>12 production-ready applications across full-stack, AI/ML, systems engineering, and DSA tools</p>
             </div>
           </Reveal>
           {/* Filters */}
@@ -439,9 +460,9 @@ export default function Portfolio() {
           <div className="projGrid" style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(330px,1fr))",gap:22}}>
             {filteredProjects.map((p,i)=>(
               <Reveal key={p.name} delay={i*0.07}>
-                <div className="pc" style={{position:"relative",overflow:"hidden",padding:"28px 24px",background:"rgba(255,255,255,0.024)",border:hoveredProject===i?`1px solid ${p.planetColor}45`:"1px solid rgba(167,139,250,0.09)",borderRadius:8,transition:"all 0.4s cubic-bezier(0.23,1,0.32,1)",cursor:"default"}} onMouseEnter={()=>setHoveredProject(i)} onMouseLeave={()=>setHoveredProject(null)}>
+                <div className="pc" style={{position:"relative",overflow:"hidden",padding:"28px 24px",background:"rgba(255,255,255,0.024)",border:hoveredProject===p.name?`1px solid ${p.planetColor}45`:"1px solid rgba(167,139,250,0.09)",borderRadius:8,transition:"all 0.4s cubic-bezier(0.23,1,0.32,1)",cursor:"default"}} onMouseEnter={()=>setHoveredProject(p.name)} onMouseLeave={()=>setHoveredProject(null)}>
                   <div style={{position:"absolute",top:-50,right:-50,width:160,height:160,borderRadius:"50%",background:`radial-gradient(circle,${p.glowColor.replace("0.5","0.07")},transparent 70%)`,pointerEvents:"none"}} />
-                  <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${p.planetColor},transparent)`,opacity:hoveredProject===i?1:0.4,transition:"opacity 0.3s"}} />
+                  <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${p.planetColor},transparent)`,opacity:hoveredProject===p.name?1:0.4,transition:"opacity 0.3s"}} />
                   <div style={{fontSize:30,marginBottom:12}}>{p.emoji}</div>
                   <div style={{...F,fontSize:9,letterSpacing:"0.2em",color:p.planetColor,marginBottom:7,textTransform:"uppercase"}}>{p.date}</div>
                   <h3 style={{...F,fontSize:"1.08rem",fontWeight:700,color:"#e2e8f0",marginBottom:5}}>{p.name}</h3>
